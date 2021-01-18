@@ -7,6 +7,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
+import lombok.experimental.Accessors;
 
 import java.io.Serializable;
 
@@ -19,15 +20,14 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = false)
+@Accessors(chain = true)
 @TableName("user")
 public class User implements Serializable {
     
     private static final long serialVersionUID = -2525690282730019965L;
     
-    @TableId(type = IdType.AUTO)
-    private Integer id;
+    @TableId(value = "id", type = IdType.ASSIGN_UUID)
+    private String id;
     private String userName;
-    private String loginName;
-    private String pwd;
-    private String sex;
+    private String password;
 }

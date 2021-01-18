@@ -22,4 +22,17 @@ public interface BillService {
      * @param bills
      */
     void addBill(Bills bills);
+
+    /**
+     * 修改账单信息
+     * @param bills
+     */
+    void updateBill(Bills bills);
+
+    /**
+     * 批量删除账单信息
+     * @param billsVO
+     * @return
+     */
+    int deleteBills(BillsVO billsVO);
 }

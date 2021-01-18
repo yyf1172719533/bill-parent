@@ -1,0 +1,5 @@
+# Project exclude paths
+/bill-common/target/
+/bill-interface/target/
+/bill-mapper/target/
+/bill-pojo/target/

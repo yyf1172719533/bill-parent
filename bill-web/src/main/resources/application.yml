@@ -7,4 +7,6 @@ dubbo:
   application:
     name: bill-web
   registry:
-    address: zookeeper://192.168.254.129:2181
+    address: zookeeper://114.55.96.13:2181
+server:
+  port: 8081

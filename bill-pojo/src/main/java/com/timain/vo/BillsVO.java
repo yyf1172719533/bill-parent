@@ -19,4 +19,6 @@ public class BillsVO extends Bills {
     private Integer limit = 10;
     private Date startTime;
     private Date endTime;
+
+    private String[] ids;
 }
