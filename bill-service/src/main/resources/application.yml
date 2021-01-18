@@ -5,7 +5,7 @@ dubbo:
     address: zookeeper://114.55.96.13:2181
   protocol:
     name: dubbo
-    port: 20880
+    port: 20881
 
 
 mybatis-plus:
